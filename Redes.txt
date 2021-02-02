@@ -1,0 +1,135 @@
+--------------------------------------------------------------------------------------------------------------
+
+* ¿Que es una red en general?
+
+Objetivo: Transportar algo de un lugar a otro
+Contiene un punto de partida y de llegada
+Puntos conectados por un medio
+
+--------------------------------------------------------------------------------------------------------------
+
+* ¿Que es una red de internet, computadores o de informatica?
+
+Es un conjunto de equipos informaticos y software conectados entre si por medio de dispositivos fisicos o
+inalambricos que envian y reciben impulsos electricos, ondas, electromagneticos o cualquier otro medio para
+el transporte de datos, con la finalidad de compartir informacion, recursos y ofrecer servicios
+
+--------------------------------------------------------------------------------------------------------------
+
+* Tipos de redes
+
+LAN (Local Area Network-Red de area local): Es una red que conecta ordenadores o dispositivos en un área relativamente pequeña con el fin de compartir recursos, datos o apps.
+
+WAN (Wide Area Network-Red de area amplia): Este tipo de red generalmente sirve para conectar dispositivos que se encuentran separados por un área geográfica extensa, es decir, si las redes LAN conectan computadores o dispositivos en un area “pequeña”, las redes WAN conectaran “sucursales” con sedes centrales.
+
+MAN (Metropolitan Area Network-Red de área metropoltana): Es una infraestructura de red que abarca un area mayor a una LAN pero menor que una WAN.
+
+ISP (Internet Service Provider-Proveedor de servicios de Internet): Es la empresa que te brinda la conexión a Internet y te permite navegar por la red.
+
+Internet: Es una red de redes interconectadas mundialmente(es una conexion de redes LAN Y WAN). “NO existe la nube”.
+
+--------------------------------------------------------------------------------------------------------------
+
+* Formas de diseñar e implementar redes de acuerdo con caraterísticas de acceso que queremos dar a los usuarios
+
+1) Intranet
+Son aquellas redes internas en las que el acceso a la información está estrictamente limitada a personal de la compañía. Este tipo de redes se restringen con el uso de software y se usan en situaciones en las que la información a la que pueden acceder los usuarios es confidencial.
+
+2) Extranet
+El siguiente nivel de acceso sucede cuando las compañías requieren dar acceso seguro y bajo confidencialidad a usuarios externos incluso a organizaciones diferentes a la que posee la información.
+
+Esto puede pasar por ejemplo cuando una compañía requiere compartir documentos o información con proveedores o contratistas.
+
+--------------------------------------------------------------------------------------------------------------
+
+* Topología de red
+
+Nos permite identificar la forma en que los nodos están conectados. La información se envía a través de los medios y de los nodos para viajar de un lugar a otro.
+
+
+--------------------------------------------------------------------------------------------------------------
+
+*  Diseñoos de topologia
+
+1) Topología Física: cuando queremos mostrar los equipos de red que conforman el diseño.
+2) Topología Lógica para mostrar el direccionamiento lógico de los dispositivos.
+
+La topología mas rápida de implementar y de ver es cuando tenemos dos nodos conectados por un medio para enviar información esta es llamada: Punto a Punto, un punto envía información al otro.
+
+* Otros ejemplos de topologias
+
+También podemos hacer combinaciones de estas topologías para realizar nuestras propias implementaciones de acuerdo con las necesidades de los usuarios.
+
+"Topología de bus"
+
+Este tipo de topología es el mas usado en redes de tipo LAN. En esta topología los nodos están conectados a un mismo medio que transporta la información.
+
+La ventaja de este tipo de red es que es fácil de implementar y puede crecer rápidamente sin tener que hacer cambios bruscos a la red.
+
+Esto, aunque es una gran ventaja y seguro le facilita la vida al administrator de la red, presenta dos inconvenientes, uno es que el tráfico de todos los nodos puede ser visto por los otros y el segundo es que a medida que la red crezca se va a ver afectado el rendimiento.
+
+"Topología de anillo"
+
+Este tipo de topología consiste en que cada nodo tiene una única conexión de entrada y una conexión de salida. Un token de confirmación viaja a través de cada nodo avisando que se envió y fue recibida correctamente.
+
+Este tipo de topología aunque garantiza el envío de la información puede llegar a ser un poco lenta ya que ésta debe pasar por cada nodo intermedio antes de alcanzar su objetivo. En el caso de que uno de los nodos fallé esto puede afectar el funcionamiento de la red.
+
+
+"Topología de estrella"
+
+En esta topología todos los nodos están conectados a un punto central, esta implementación permite garantizar el funcionamiento de la red, de forma que si alguno de los nodos falla esto no va a afectar para nada el funcionamiento ni el rendimiento de la red.
+
+Esta topología se usa mucho en redes LAN, por ejemplo en oficinas en las que hay un switch al que llegan todas las conexiones de los dispositivos a través de cable.
+
+Es una topología que permite agregar nodos nuevos siempre que el dispositivo central lo permita, sin embargo en caso en que el nodo central falle toda la red dejará de funcionar.
+
+"Topología de malla"
+
+En las topologías de tipo malla todos los nodos están conectados entre sí, este tipo de conexión permite que cada nodo pueda actuar como servidor y como cliente.
+
+Esta es una forma óptima de mantener la conexión entre dispositivos en una red, ya que se reduce a uno la cantidad de dispositivos por los que debe viajar la información y en caso de que un nodo de la red falle los datos pueden ser enviados por otro camino, lo que asegura disponibilidad.
+
+"Topología de árbol"
+
+En esta topología contamos con varios dispositivos intermedios que permiten que otros nodos se conecten. 
+
+Por ejemplo, podemos tener un punto inicial que recibe la conexión a Internet desde el ISP, de allí viaja por el medio a un switch que distribuye a otros dispositivos que pueden ser nodos u otros dispositivos intermedios, switches, routers etc. 
+
+Quienes a su vez envían los datos a otros dispositivos iguales. La forma de la red se parece mucho a un árbol.
+
+--------------------------------------------------------------------------------------------------------------
+
+* Ancho de banda
+
+Es la capacidad maxima de transferencia de informacion
+
+* Velocidad de internet
+
+1 Kilobit (Kb-Kbit) = 1000 bits (b)
+1 Megabit (Mb) = 1000 Kilobits (Kb)
+1 Byte (B) = 8 bits (b) => Al byte también lo llaman octeto
+1 Kilobyte (KB) = 1024 Bytes (B)
+1 Megabyte (MB) = 1024 Kilobytes (KB)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Redes convergentes
+
+Transportan multiples servicios a traves de la misma red (ejemplo: voz, datos, video, imagenes, etc...)
+
+--------------------------------------------------------------------------------------------------------------
+
+* ¿Qué es Telnet?
+
+El protocolo Telnet, acrónimo de “Telecommunication Network”, es un protocolo de red que permite comunicarse en modo texto con otra máquina de manera que podamos controlarla de forma remota. Este protocolo se basa en la arquitectura cliente-servidor, donde el servidor será el ordenador que vamos a manejar y el cliente el ordenador desde el que vamos a controlar el servidor.
+
+Este es un protocolo muy simple, sin embargo, cuenta con grave problema de seguridad, y es que las conexiones no son seguras, y el tráfico viaja sin cifrar.
+
+--------------------------------------------------------------------------------------------------------------
+
+* ¿Qué es SSH?
+
+SSH o Secure Shell, es un protocolo de administración remota que permite a los usuarios controlar y modificar sus servidores remotos a través de Internet. El servicio se creó como un reemplazo seguro para el Telnet sin cifrar y utiliza técnicas criptográficas para garantizar que todas las comunicaciones hacia y desde el servidor remoto sucedan de manera encriptada. Proporciona un mecanismo para autenticar un usuario remoto, transferir entradas desde el cliente al host y retransmitir la salida de vuelta al cliente.
+
+
+

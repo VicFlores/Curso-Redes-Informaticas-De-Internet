@@ -1,0 +1,90 @@
+
+<Configurar un switch>
+
+--------------------------------------------------------------------------------------------------------------
+
+* Comando para entrar a modo de ejecucion con privilegios
+	(enable)
+
+AL final del nombre del dispositivo tendra el signo: #
+
+--------------------------------------------------------------------------------------------------------------
+
+* Comando para entrar a modo de configuracion global
+	(configure terminal)
+
+Al final del nombre del dispositivo tendra: (config)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Comando para configurar interfaces (puertos)
+	(interface -nombre de la interfaz(puerto)-)	
+
+--------------------------------------------------------------------------------------------------------------
+
+* Comando para ver las configuraciones del dispositivo
+	(show running-config)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Ponerle nombre al hostname del dispositivo (configuracion global)
+	(hostname -nombre-)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Ponerle contraseña al dispositivo (configuracion global)
+	(enable secret -contraseña-)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Mensaje de inicio al configurar al dispositivo
+	(banner motd # -Mensaje de bienvenida- #)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Comando para entrar al modo de configuracion de interfaces(puertos)
+	(interface vlan1)
+
+Al final del nombre del dispositivo tendra: (config-if)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Configurar la direccion IP (modo de configuracion de interfaces)
+	(ip address -ip a designar- -mascara de sub red-)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Encender la interface (modo de configuracion de interfaces)
+	(no shutdown)
+
+--------------------------------------------------------------------------------------------------------------
+
+* Guardar las configuraciones (ejecucion con privilegios)
+	(copy run start startup-config)
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+<Configurar una pc>
+
+--------------------------------------------------------------------------------------------------------------
+
+* Agregar IP y mascara definida en el switch
+
+1) Click en config
+2) Click en FastEthernet0
+3) En IPv4 Adress escribir la IP designada en el switch
+4) En Subnet Mask escribir la mascara designada en el switch
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
